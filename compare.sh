@@ -1,8 +1,8 @@
-python calculateAverage.py > python.txt
-python calculateAveragePypy.py > pypy.txt
-python calculateAveragePolars.py > polars.txt
-python calculateAverageDuckDB.py > duckdb.txt
-python calculateAveragePypyInputBuffer.py > pypyinputbuffer.txt
+uv run calculateAverage.py > python.txt
+uv run calculateAveragePypy.py > pypy.txt
+uv run calculateAveragePolars.py > polars.txt
+uv run calculateAverageDuckDB.py > duckdb.txt
+uv run calculateAveragePypyInputBuffer.py > pypyinputbuffer.txt
 git diff --no-index --word-diff=porcelain python.txt pypy.txt
 git diff --no-index --word-diff=porcelain python.txt polars.txt
 git diff --no-index --word-diff=porcelain python.txt duckdb.txt
